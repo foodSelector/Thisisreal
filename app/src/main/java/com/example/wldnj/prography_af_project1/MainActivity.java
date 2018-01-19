@@ -25,6 +25,10 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("a2","혼밥의 고수");
             intent.putExtra("a3","오늘도나혼자밥");
             intent.putExtra("a4","혼밥혼밥");
+            intent.putExtra("a5","혼밥혼밥");
+            intent.putExtra("a6","혼밥혼밥");
+            intent.putExtra("a7","혼밥혼밥");
+
             break;
         case R.id.btn2:
             intent.putExtra("a1","밀당의 고수");

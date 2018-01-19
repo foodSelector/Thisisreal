@@ -1,0 +1,14 @@
+
+
+<resources>
+
+    <declare-styleable name="LoginButton">
+        <attr name="bg" format="reference|integer" />
+        <attr name="symbol" format="reference|integer" />
+        <attr name="text" format="reference|string" />
+        <attr name="textColor" format="reference|integer" />
+        <attr name="text1" format="reference|string" />
+
+    </declare-styleable>
+
+</resources>

@@ -2,24 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
-   <!-- <LinearLayout
-        android:id="@+id/layout1"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
-            android:id="@+id/page1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Page 1"/>
-        <Button
-            android:id="@+id/page2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Page2"/>
-    </LinearLayout>-->
+    android:layout_height="match_parent">
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -28,39 +12,44 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <ImageButton
-            android:src="@drawable/alone"
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/alone"
             android:id="@+id/btn1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="혼밥하기 좋은"
-            android:layout_weight="0.5"
+            android:layout_weight="1"
             android:onClick="mOnClick"/>
-        <ImageButton
+        <LinearLayout
             android:id="@+id/btn2"
-            android:src="@drawable/date"
+            android:background="@drawable/date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="분위기 좋은 "
-            android:layout_weight="0.5"
-            android:onClick="mOnClick"/>
-        <ImageButton
+            android:layout_weight="1"
+            android:onClick="mOnClick"
+            android:orientation="horizontal" />
+        <LinearLayout
             android:id="@+id/btn3"
-            android:src="@drawable/friends"
+            android:background="@drawable/friends"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.75"
+            android:layout_weight="1"
             android:text="그냥 진짜 친구랑"
-            android:onClick="mOnClick"/>
-        <ImageButton
+            android:onClick="mOnClick"
+            android:orientation="horizontal" />
+        <LinearLayout
             android:id="@+id/btn4"
-            android:src="@drawable/family"
-            android:layout_weight="0.75"
+            android:background="@drawable/family"
+            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="가족과 함께"
-            android:onClick="mOnClick"/>
+            android:onClick="mOnClick"
+            android:orientation="horizontal"/>
+
 
     </LinearLayout>
     </FrameLayout>
+
 </LinearLayout>
